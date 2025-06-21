@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GO-Pokemon</title>
+</head>
+ <style>
+        body {
+            display: flex;
+            justify-content: center; /* centers the container horizontally */
+            align-items: center;     /* centers it vertically */
+            height: 100vh;           /* full screen height */
+            flex-direction: column;  /* stack items vertically */
+            font-family: sans-serif;
+            background-color: black;
+        }
+        div{
+            margin-top: -100px;
+        }
+
+        #img {
+            width: 300px;
+            height: 400px;
+            object-fit: contain;
+            border: 1px solid #444;
+            margin-top: 20px;
+            margin-left: 30px;
+            background-color: rgb(231, 210, 213);
+            opacity: 1;
+            border-radius: 5%;
+        }
+
+        #input, #butt {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: yellowgreen;
+        }
+        h1{
+            color:wheat;
+            margin-left: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        #input{
+            background-color: aliceblue;
+        }
+
+ </style>
+<body>
+    <div>
+    <h1></h1>
+    <input id="input" type="text" placeholder="enter a pokemon name">
+    <button id="butt">Get Pokemon</button>
+    <br>
+    <img id="img" />
+    </div>
+
+    <script src="api1.js"></script>
+</body>
+</html>
